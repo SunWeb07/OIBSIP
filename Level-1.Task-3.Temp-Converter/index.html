@@ -1,0 +1,68 @@
+<!--Mawani Sunny Oasis Infobyte Level-1 Task-3 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <h1 class="w3-xxxlarge">Temperature Converter</h1>
+    <p class="w3-panel w3-xlarge">Oasis Infobyte Level - 1 Task -3:</p>
+    <div class="w3-container adjust">
+        <form action="" id="form">
+            <button type="button" class="w3-btn  Sbtn active" onclick="getCFK(0);" id="c-btn">Celsius</button>
+            <button type="button" class="w3-btn  Sbtn" onclick="getCFK(1);" id="f-btn">Fahrenheit</button>
+            <button type="button" class="w3-btn  Sbtn" onclick="getCFK(2);" id="k-btn">Kelvin</button>
+        </form>
+
+        <div class="celsius w3-card w3-aqua w3-margin w3-padding w3-animate-left" id="c-div">
+            <form action="" id="f1">
+                <input type="num" class="w3-input w3-text-deep-orange" placeholder="Enter Celsius in Degree" id="cel" />
+                <select name="temp1" class="w3-select w3-text-deep-purple" id="temp1">
+                    <option value="Fahraniet" class="w3-button">F</option>
+                    <option value="Kelvin" class="w3-button">K</option>
+                </select>
+                <input type="num" id="result" disabled placeholder="Result" class="w3-input w3-green w3-text-dark-gray">
+                <button type="button" class="w3-btn convert w3-red" onclick="getTemp(event,1);">Convert</button>
+                <button type="button" class="w3-btn convert w3-gray" onclick="clear1();">Clear</button>
+            </form>
+        </div>
+        <div class="fahraniet w3-card w3-aqua w3-margin w3-padding w3-animate-zoom" id="f-div">
+            <form action="" id="f2">
+                <input type="num" id="fah" class="w3-input w3-text-deep-orange"
+                    placeholder="Enter Fahraniet in Degree" />
+                <select name="temp2" id="temp2" class="w3-select w3-text-deep-purple">
+                    <option value="Celsius" class="w3-btn">C</option>
+                    <option value="Kelvin" class="w3-btn">K</option>
+                </select>
+                <input type="num" id="result2" class="w3-input w3-green w3-text-dark-gray" disabled
+                    placeholder="Result">
+                <button type="button" class="w3-btn convert w3-red" onclick="getTemp(event,2);">Convert</button>
+                <button type="button" class="w3-btn convert w3-gray" onclick="clear2();">Clear</button>
+            </form>
+        </div>
+        <div class="kelvin w3-card w3-aqua w3-margin w3-padding w3-animate-right" id="k-div">
+            <form action="" id="f3">
+                <input type="num" id="kel" class="w3-input  w3-text-deep-orange" placeholder="Enter Kelvin in Degree" />
+                <select name="temp3" id="temp3" class="w3-select w3-text-deep-purple">
+                    <option value="Celsius" class="w3-btn">C</option>
+                    <option value="Fahraniet" class="w3-btn">F</option>
+                </select>
+                <input type="num" id="result3" disabled placeholder="Result"
+                    class="w3-input w3-green w3-text-dark-gray">
+                <button type="button" class="w3-btn convert w3-red" onclick="getTemp(event,3);">Convert</button>
+                <button type="button" class="w3-btn convert w3-gray" onclick="clear3();">Clear</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
