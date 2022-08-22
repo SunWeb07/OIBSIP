@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -227,12 +228,13 @@ h2 em {
 }
 /*about page paragraph styling*/
 #about p{
-  padding: 10px;
+  padding: 10px 0;
   line-height: 1.1;
+text-align:justify;
   text-indent: 33%;
   text-transform: capitalize;
   margin: 5px 0;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 /*skill section styling*/
 .skills:not(:last-child){
@@ -343,8 +345,8 @@ padding: 10px;
 .box .desc{
   font-size: 0.875em;
   margin: 10px 0;
-
-  padding: 10px;
+text-align:justify;
+  padding: 10px 0;
   line-height: 1.01;
  
 }
@@ -362,6 +364,16 @@ padding: 10px;
 }
 .demo-btn a:hover{
   color: #4681f4;
+}
+.box .myBtn{
+
+margin:5px 0;
+text-decoration:underline;
+     background-color: #fff !important; 
+    color: black;}
+.box .myBtn:hover{
+background-color:#000 !important;
+color:#fff;
 }
 
 /*Contact section styling*/
